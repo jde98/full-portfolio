@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.font-Nanum {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+section {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    position: relative;
+    max-width: 1300px;
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+}
+header {
+    width:100%;
+    height: 969px;
+    display: block;
+    background-color: #fff;
+    overflow: hidden;
+}
+nav {
+    width: 100%;
+    background-color: #fff;
+}
+.header_nav {
+    width: 100%;
+    
+}
+.header_nav li{
+    float: left;
+    width: 100%;
+    height: 25px;
+    padding: 5px 0;
+}
+.header_nav li a {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.header_main_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+.header_main_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: no-repeat url(../img/배경3.png);
+    background-size: 800px;
+    background-position: center;
+}
+.header_main_title h1 {
+    font-size: 100px;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 35%;
+    left: 10px;
+    display: block;
+    overflow: hidden;
+    width: 60px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+.menu:hover {
+    width: 180px;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu a, .menu > label {
+    display: block;
+    height: 25px;
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu label:hover a {
+    color: #000;
+}
+.menu ul li:hover, .menu > label:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+.menu label a, .header_nav li a {
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    line-height: 1.5;
+    font-size: 1em;
+    padding: 0 0 0 20px;
+}
+.header_nav li {
+    cursor: pointer;
+}
+.header_nav li span i {
+    padding: 0 8px;
+}
+.header_nav li:hover a {
+    color: #000;
+}
+
+#expand-menu {
+    display: none;
+}
+#expand-menu:checked ~ ul {
+    display: block;
+    height: auto;
+}
+
+.menu ::before {
+    font-size: 1.5em;
+    float: left;
+    clear: left;
+}
+@media screen and (max-width:1023px) {
+    .menu {
+        width: 60px;
+    }
+}
+@media screen and (max-width:560px) {
+    .menu #expand-menu:not(:checked) ~ ul {
+        display: none;
+    }
+}
+
+
+#section2 .colorcircle:first-of-type {background-color: #ffeb60;}
+#section2 .colorcircle:nth-of-type(2) {background-color: #a7a39a;}
+#section2 .colorcircle:last-of-type {background-color: #9f9a8f;}
+#section2 h3 {color: #9f9a8f;}
+
+.leftbox {width:500px; height: 100vh;}
+
+.colorbox {display: flex; margin: 10px 0px;}
+.colorcircle {width:40px; height: 40px; border-radius: 70%; margin:0 10px 0 0px;}
+
+.textbox {width:80%; margin:50px 0px;}
+
+.btnbox {display: flex; margin: 30px 0 0 0px;}
+.btnbox  div {margin: 0 10px 0 0px; background-color: #333333; padding: 8px 20px; border: 1px solid black;}
+.btnbox a {color:#fff;}
+.btnbox div:hover {background-color: #fff; border: 1px solid black;}
+
+.rightbox {width: 800px; overflow: hidden;}
+.rightbox img {width:100%;}
+
+.phonbox {width: 230px; height: 485px; border-radius: 35px; overflow: hidden; position: absolute; bottom: 0px; left: 390px; background-size: contain;}
+.phonbox img {width: 100%;}
+.phonbox li {width: 230px; height: 485px;  background: url("../img/mobile_frame.png"); background-size: 100%; position: absolute; left:-3px; bottom: 1px; overflow: hidden;}
+.phonbox ul {width: 223px; overflow: hidden;}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+body {margin: 0; padding: 0; box-sizing: border-box; font-family: "Noto Sans KR", "Roboto", Malgun Gothic, "맑은 고딕", AppleGothic, Dotum, "돋움", sans-serif;}
+ul, ol, li {list-style: none; margin: 0; padding: 0;}
+
+header {width: 100%; height: 173px; position: relative; border-bottom: 1px solid #ced4da; margin: 10;}
+
+#header_top_line {border-bottom: 1px solid #ced4da; width: 100%; height: 35px; display: inline-block;}
+
+.header_top_wrap {height: 35px; width: 1200px; margin: 0 auto;}
+
+/* 헤더 */
+header > .header_top {width: 1250px; height: 100px; text-align: center;  margin: 0 auto;}
+
+/*카테고리*/
+.category {background-color: #faebc3; display: inline-block; float: left; text-align: center; width: 75px; border-radius: 20px; height: 31px; margin: 2px 0;}
+.category > strong {font-size: 12px; margin: 0 0 0 5px; line-height: 20px;}
+.category > button {font-size: 14px; border: none; border-radius: 50px; background-color: gold; color: #fff; height: 20px; width: 20px; margin: 5px 0 0 0; padding: 0;}
+
+
+/*카테고리 선택*/
+/*
+#category_select {font-size: 14px; background-color: #faebc3; border: 1px solid gold; border-radius: 30px; display: inline-block;}
+#category_select > ul > li {display: inline-block;}
+#category_selector > ul > li > a {color: black; text-decoration: none;}
+*/
+
+/*rolling notice*/
+.roling_notice_wrap {display: inline-block;}
+
+#roling_button {display: inline-block; float: left; margin: 0 5px;}
+#roling_button > li {background-color: black; display: inline-block; width: 15px; height: 15px; text-align: center; border:1px solid #808080; float: left; line-height: 10px; margin: 10px 0;}
+#roling_button > li:last-child {margin: 0 10px 0 0; margin: 10px 0;}
+#roling_button > li > a {color: #fff; text-decoration: none; font-size: 12px; font-weight: bold;}
+
+#roling_notice {display: inline-block;}
+#roling_notice > li {width: 500px; line-height: 32px;}
+#roling_notice > li > a {color: black; text-decoration: none; font-size: 12px;}
+#roling_notice > li:hover {text-decoration:underline;}
+
+/* 로그인 */
+header > #header_top_line > .header_top > .header_top_wrap > .login {width: 500px; height: 35px; float: right;}
+.login > ul {font-size: 12px; text-align: center; float: right;}
+.login > ul > li {float: left; margin: 10px 0 0 15px; height: 20px;}
+.login > a > img {float: left; display: inline-block; margin: 10px 0;}
+.login > ul > li > a {color: #808080; text-decoration: none;}
+.login > ul > li > a > i > img {width: 15px; float: left;}
+
+header > .header_center >.logo {margin: 11px auto; width: 100%; height: 66px; text-align: center;}
+
+/* nav */
+header > nav {width: 1200px; height: 46px; margin: 0 auto;}
+nav > ul {display: inline-block; height: 100%; text-align: center;}
+nav > ul > li {float: left; margin: 10px 12px; width: 100px; font-weight: bold;}
+nav > ul > li > a {color: black; text-decoration: none; font-size: 14px;}
+nav > .search_box {float: right; display: inline-block; width: 245px; height: 30px; border: 3px solid #eee; border-radius: 25px;}
+nav > .search_box > input {float: left; border: none; margin: 7px 10px; width: 175px;}
+nav > .search_box > a > img {width: 28px; float: right; margin: 2px 5px 0 10px;}
+
+.nav_list_warp {display: none;}
+
+/*content*/
+.content-warp {border-bottom: 1px solid #ced4da; border-top: 1px solid #ced4da;}
+#service, #account_num{ width: 220px; margin-left: 20px;}
+#footer-notice{ width: 300px; margin-left: 25px;}
+#company_cate{ width: 279px; margin-left: 107px;}
+.content_info { padding: 30px 0;  width: 1200px; margin: 0 auto; color: #333; overflow: auto;}
+.content_info > div {float: left;}
+.content_info > div > strong {font-size: 13px; font-weight: bold; margin: 10px;}
+.content_info > div > ul { margin-top: 5px;}
+.content_info > div > ul > li {line-height: 20px; font-size: 11px; margin: 0 10px;}
+.content_info > div > ul > .text-bold {font-size: 14px; font-weight: bold;}
+
+#company_cate > span { display: inline-block; padding: 0 0 13px; width: 47%;}
+#company_cate > span > a {color: black; text-decoration: none; font-size: 12px;}
+
+/*footer*/
+footer { width: 100%; height: 220px; padding : 35px 0 35px 0; text-align: center; background-color: #f8f9fa;}
+footer > .footer {width:1200px; margin:0 auto; font-size: 11px; line-height: 15px; padding: 35px
+ 0 0;}
+footer > .footer > div {margin : 5px 0;}
+footer > .footer > div > address {font-style: initial;}
+.footer > div > button {background-color: #fff; width: 99px;font-size: 11px; border: none; border-bottom: 1px solid #333333; padding: 0;}
+.footer > div > span {color: #aaa;}
+.footer > div > button:hover {cursor: pointer;}
+.footer > div:last-child {margin: 20px;}
+.footer > div:last-child > strong {font-weight: bold; font-size: 14px;}
+
+/*shopping*/
+.shopping {position: fixed; bottom: 0; width: 100%; background-color: #f8f8f8; border-top: 1px solid #333; text-align: center;}
+.shopping > ul > li {float: left; margin: 10px 0; text-align: center;}
+.shopping > ul > li:first-child {margin: 10px 20px 0 20%;}
+.shopping > ul > li > a {color: black; text-decoration: none; font-size: 14px; width: 130px; display: inline-block; position: relative;}
+.shopping > ul > li > a > span {position: absolute; display: inline-block; left: 50px; top: 3px; line-height: 15px;}
+.shopping > ul > li > a > img {margin-left: -60px;}

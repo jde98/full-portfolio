@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<!--font link-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<title>Lifetrackr</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function (){
+
+			/* 최상단 위치 시 헤더값 변경 */
+			$(document).on('scroll', function() {
+				if($(document).scrollTop()>100) {
+					$('header').removeClass('large').addClass('small');
+				} else {
+					$('header').removeClass('small').addClass('large');
+				}
+			});
+
+			/* 모바일 사이즈 인 경우 네비게이션바 숨기기 */
+			if(window.innerWidth<=990){
+				$(".navi").hide();
+				$(".btn_navi").show();
+			}
+
+			/* 모바일 네비게이션바 버튼 */
+			$(".btn_navi").click(function(){
+				$(".navi").slideToggle();
+			});
+
+			/* 모바일 or 데탑 사이징 별 메뉴  */
+			$(window).resize(function(){
+				if (window.innerWidth>=991) {
+					$(".navi").show();
+					$(".btn_navi").hide();
+				} else {
+					$(".navi").hide();
+					$(".btn_navi").show();
+				}
+			});
+
+			$('.video_button').click(function() {
+
+				var $videoFrame = $("<iframe>", { width : "100%"
+					, height : "487"
+					, class : "video_wrap wrap_flex"
+					, src : "https://www.youtube.com/embed/jrkvirglgaQ?autoplay=1&mute=1"
+					, title : "YouTube video player"
+					, frameborder : "0"
+					, allow : "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"});
+
+				$("#video_container").html($videoFrame);
+
+			});
+
+			$('#home_button').click(function(){
+
+			var offset = $('#home').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+                $('html').animate({scrollTop : offset.top}, 500);
+
+            });
+
+			$('#about_button').click(function(){
+
+			var offset = $('#about').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+                $('html').animate({scrollTop : offset.top}, 500);
+
+            });
+
+			$('#features_button').click(function(){
+
+			var offset = $('#features').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+                $('html').animate({scrollTop : offset.top}, 500);
+
+            });
+
+			$('#pricing_button').click(function(){
+
+			var offset = $('#pricing').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+                $('html').animate({scrollTop : offset.top}, 500);
+
+            });
+
+			$('#team_button').click(function(){
+
+			var offset = $('#team').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+                $('html').animate({scrollTop : offset.top}, 500);
+
+            });
+
+			$('#contact_button').click(function(){
+
+			var offset = $('#contact').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+                $('html').animate({scrollTop : offset.top}, 500);
+
+            });
+		});
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+
+		<header class="small">
+			<div class="header_wid container">
+				<a href="#" class="logo"></a>
+				<div class="hamburger_button btn_navi"></div>
+				<nav class="navi">
+					<ul>
+						<li><a href="#home" id="home_button">HOME</a></li>
+						<li><a href="#about" id="about_button">ABOUT</a></li>
+						<li><a href="#features" id="features_button">FEATURES</a></li>
+						<li><a href="#pricing" id="pricing_button">PRICING</a></li>
+						<li><a href="#team" id="team_button">TEAM</a></li>
+						<li><a href="#conta" id="contact_button">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="main_banner" id="home">
+			<div class="main_banner_top container">
+				<div class="text">
+
+					<h1>AMAZING APP BEST FOR BUSINESS</h1>
+					<p>LET YOU TRACK EVERYTHING IN YOUR LIFE WITH A SIMPLE WAY</p>
+
+					<div class="button_img">
+						<div class="google_play"></div>
+						<div class="apple_store"></div>
+					</div>
+				</div>
+				<div class="main_banner_info_top">
+					<img src="img/iphone-banner.png">
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div class="main_banner_center_1">
+				<div class="center_1 container">
+					<div class="center_img_wrap">
+						<img src="img/iphone-feature.png">
+					</div>
+					<div class="center_wrap">
+						<div class="info1 box">
+							<div>
+								<img src="img/news.png">
+							</div>
+							<div>
+								<h3>CREATIVE DESIGN</h3>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete accounta</p>
+							</div>
+						</div>
+						<div class="info2 box">
+							<div>
+								<img src="img/earth-globe.png">
+							</div>
+							<div>
+								<h3>CREATIVE DESIGN</h3>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete accounta</p>
+							</div>
+						</div>
+						<div class="info3 box">
+							<div>
+								<img src="img/compass.png">
+							</div>
+							<div>
+								<h3>BEST USER EXPERIENCE</h3>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete accounta</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="features">
+				<div class="bg_img">
+					<div class="center2_text">
+						<h1>App Features</h1>
+						<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+					</div>
+					<div class="center_2 container">
+						<div class="center2_info_left">
+							<div class="center2_box b1">
+								<img src="img/compass.png">
+								<h3>BEAUTIFUL INTERFACE DESIGN</h3>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+							</div>
+							<div class="center2_box b1">
+								<img src="img/tools.png">
+								<h3>UNLIMITED FEATURES</h3>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+							</div>
+						</div>
+						<div class="center2_info_center">
+							<div class="center2_box b2">
+								<img src="img/chat.png">
+								<h3>FULL FREE CHAT</h3>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+							</div>
+
+							<img src="img/i-phone-screen.png">
+
+							<div class="center2_box b2">
+								<img src="img/hourglass.png">
+								<h3>24/7 SUPPORT BY REAL PEOPLE</h3>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+							</div>
+						</div>
+						<div class="center2_info_right">
+							<div class="center2_box b3">
+								<img src="img/device.png">
+								<h3>RETINA READY GREAPHICS</h3>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+							</div>
+							<div class="center2_box b3">
+								<img src="img/book.png">
+								<h3>IOS & ANDROID VERSION</h3>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="center_fix_bg">
+				<div class="container" id="video_container">
+					<div class="video_wrap wrap_flex" >
+						<div class="video_button">
+							<div class="video_button_icon">
+								<div class="play_button">
+									▷
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section_bg" id="pricing">
+				<div class="center_3 container">
+					<div class="center3_text">
+						<h1>Choose Your Subscription Plan</h1>
+						<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+					</div>
+					<div class="center3_box_wrap">
+						<div class="center3_box">
+							<h3>FREE</h3>
+							<strong>$0</strong><span>/month</span>
+							<p>Android App
+								One time payment
+								Build & Publish
+							Life time support</p>
+							<a href="#">START NOW</a>
+						</div>
+						<div class="center3_box">
+							<h3>BASIC</h3>
+							<strong id="other_text_color">$19</strong><span>/month</span>
+							<p>Android App
+								One time payment
+								Build & Publish
+							Life time support</p>
+							<a href="#" id="other_button_color">START NOW</a>
+						</div>
+						<div class="center3_box">
+							<h3>ADVANCE</h3>
+							<strong>$99</strong><span>/month</span>
+							<p>Android App
+								One time payment
+								Build & Publish
+							Life time support</p>
+							<a href="#" >START NOW</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="center_fix_bg">
+				<div class="center_4 container">
+					<div class="center4_img">
+						<img src="img/iphone-chat.png">
+					</div>
+					<div>
+						<div class="center4_text">
+							<h1>Free Download Now</h1>
+							<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+						</div>
+						<div class="button_img">
+							<div class="google_play"></div>
+							<div class="apple_store"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section5" style="background-color: #f8f8f8;">
+				<div class="center_5 container">
+					<div class="center5_box">
+						<h2>29K</h2>
+						<p>DOWNLOAD</p>
+					</div>
+					<div class="center5_box">
+						<h2>200K</h2>
+						<p>ACTIVE ACCOUNT</p>
+					</div>
+					<div class="center5_box">
+						<h2>60K</h2>
+						<p>HAPPY USER</p>
+					</div>
+					<div class="center5_box">
+						<h2>300K</h2><sup>+</sup>
+						<p>DOWNLOAD</p>
+					</div>
+				</div>			
+			</section>
+
+			<section class="section_bg" id="team">
+				<div class="center6_text">
+					<h1>Our Creative Team</h1>
+					<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+				</div>
+				<div class="employee container">
+					<div class="employee_info">
+						<img src="img/member-one.jpg">
+						<h3>JOHNNY DEPP</h3>
+						<p>Production Designer</p>
+						<div class="skill_bar">
+							<div class="progress" data-percent="85%">
+								<div class="progress-bar" style="width:85%;"></div>
+							</div>
+							<span>85%</span>
+						</div>
+						<div class="center6_icon">
+							<a href="https://ko-kr.facebook.com/"><img src="img/icon-facebook
+							.png"></a>
+							<a href="https://twitter.com/?lang=ko"><img src="img/icon-twitter.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon_social.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon-instagram.png"></a>
+						</div>
+					</div>
+
+					<div class="employee_info"> 
+						<img src="img/member-two.jpg">
+						<h3>CRISTIN MILIOTI</h3>
+						<p>UX Researcher</p>
+						<div class="skill_bar">
+							<div class="progress" data-percent="95%">
+								<div class="progress-bar" style="width:95%;"></div>
+							</div>
+							<span>95%</span>
+						</div>
+						<div class="center6_icon">
+							<a href="https://ko-kr.facebook.com/"><img src="img/icon-facebook
+							.png"></a>
+							<a href="https://twitter.com/?lang=ko"><img src="img/icon-twitter.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon_social.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon-instagram.png"></a>
+						</div>
+					</div>
+
+					<div class="employee_info">
+						<img src="img/member-three.jpg">
+						<h3>JOHN DOE</h3>
+						<p>Head of Ideas</p>
+						<div class="skill_bar">
+							<div class="progress" data-percent="80%">
+								<div class="progress-bar" style="width:80%;"></div>
+							</div>
+							<span>80%</span>
+						</div>
+						<div class="center6_icon">
+							<a href="https://ko-kr.facebook.com/"><img src="img/icon-facebook
+							.png"></a>
+							<a href="https://twitter.com/?lang=ko"><img src="img/icon-twitter.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon_social.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon-instagram.png"></a>
+						</div>
+					</div>
+
+					<div class="employee_info">
+						<img src="img/member-four.jpg">
+						<h3>MARIO GOTZE</h3>
+						<p>UX/UI designer</p>
+						<div class="skill_bar">
+							<div class="progress" data-percent="75%">
+								<div class="progress-bar" style="width:75%;"></div>
+							</div>
+							<span>75%</span>
+						</div>
+						<div class="center6_icon">
+							<a href="https://ko-kr.facebook.com/"><img src="img/icon-facebook
+							.png"></a>
+							<a href="https://twitter.com/?lang=ko"><img src="img/icon-twitter.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon_social.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon-instagram.png"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section7_bg">
+				<div class="center7_text">
+					<h1>Our Happy Customers</h1>
+					<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+				</div>
+				<div class="center_7 container">
+
+						<div class="icon_box" id="previous">
+							<img src="img/icon-left-button.png">
+						</div>
+						<div id="slide">
+							<div class="slider">
+								<div class="slider_text">
+									<h3>Kris lazy Cistin Miloti</h3>
+									<p>CEO at <span>Themefisher</span></p>
+									<p>Explain to you how all this mistaken idea of denouncing tis pleasure and praising pain was born and I will give you a complete praising the account is account the. </p>
+									<img src="img/star.png">
+								</div>
+								<div class="slider_img">
+									<img src="img/review-person-one.png">
+								</div>
+							</div>
+							<div class="slider">
+								<div class="slider_text">
+									<h3>Kris lazy Cistin Miloti</h3>
+									<p>CEO at <span>Themefisher</span></p>
+									<p>Explain to you how all this mistaken idea of denouncing tis pleasure and praising pain was born and I will give you a complete praising the account is account the. </p>
+									<img src="img/star.png">
+								</div>
+								<div class="slider_img">
+									<img src="img/review-person-one.png">
+								</div>
+							</div>
+						</div>
+						<div class="icon_box" id="next">
+							<img src="img/icon-right-button.png">
+						</div>
+				</div>
+			</section>
+
+			<section class="section8_bg" id="contact">
+				<div class="center_8 container">
+					<div class="center8_img">
+						<img src="img/iphone-banner.png">
+					</div>
+					<div class="center8_info">
+						<div class="center8_text">
+							<h1>Subscribe Our Newsletter</h1>
+							<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+						</div>
+						<div class="input_wrap">
+							<div class="input_text">
+							<input type="text" placeholder="Enter your email address">
+							</div>
+							<div class="input_img">
+								<img src="img/7253151.png">
+							</div>
+						</div>
+						<p style="padding: 30px 0; text-align:right; color:#7d71d3; ">Subscribe To Our Newsletter & Stay Updated</p>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+
+				<div class="footer_style container">
+					<div class="footer_left">
+						<a href="#" class="logo"></a>
+						<div class="footer_info">
+							<p>@2018 Themefisher All Rights Reserved | Design By : <strong>Themefisher</strong> Team</p>
+							<p>Get More <strong>Free Bootstrap Templates</strong></p>
+						</div>
+					</div>
+					<div class="footer_right">
+						<div class="center6_icon">
+							<a href="https://ko-kr.facebook.com/"><img src="img/icon-facebook.png"></a>
+							<a href="https://twitter.com/?lang=ko"><img src="img/icon-twitter.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon_social.png"></a>
+							<a href="https://www.instagram.com/?hl=ko"><img src="img/icon-instagram.png"></a>
+						</div>
+						<ul>
+							<li><a href="#about">ABOUT</a></li>
+							<li><a href="#team">TEAM</a></li>
+							<li><a href="#contact">CONTACT</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</footer>
+
+		</div>
+	</body>
+</html>

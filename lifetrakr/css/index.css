@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url('main.css');
+
+
+@media (min-width:991px) and (max-width: 1199px) {
+	.container {max-width: 960px; padding: 0;}
+	.hamburger_button {display: none;}
+
+	.text {width: 100%;}
+	.main_banner_info_top {max-width: 30%;}
+
+	.center_img_wrap {display: flex; align-items: center; justify-content: center;}
+	.center_wrap {padding: 0;}
+	.center2_box {width: auto;}
+
+
+	.section5 {padding: 180px 0 100px;}
+}
+
+@media (min-width:768px) and (max-width: 990px){
+	header .container {max-width: 990px; flex-wrap: wrap; height: auto;}
+	section .container {flex-wrap: wrpa;}
+	.container {max-width: 720px; padding: 0;}
+	
+	.logo {margin: 0 5%;}
+	.hamburger_button {display: block; margin: 10px 5%;}
+
+	nav {width: 100%; display: none; }
+	nav ul {flex-direction: column; background-color: #7d71d3;}
+
+
+	.main_banner {padding: 150px 0;}
+	.main_banner_info {width: 100%;}
+	.main_banner_top {width: 100%;}
+
+
+	.google_play {margin-bottom: 10px;}
+	.apple_store {margin-bottom: 10px;}
+
+	.text {width: 100%;}
+
+
+	.center_1 {flex-wrap: wrap;}
+	.center_img_wrap {text-align: center;}
+	.center_img_wrap img {max-width: 70%;}
+	.center_wrap {align-items: center;}
+	.center_wrap .box {width: 80%;}
+
+	
+
+	.center_2 {flex-flow: column;}
+	.center_2 div {flex-flow: column;}
+	.main_banner_info_top {max-width: 100%; display: flex; align-items: center;}
+
+	.center3_box_wrap {flex-wrap: wrap;}
+
+	.center4_img img {position: relative; top: 0; left: 0; width: 90%;}
+	.employee {flex-wrap: wrap;}
+
+	.section5 {padding: 100px 0;}
+
+	.section7_bg .container {max-width: 100%;}
+	
+
+	.center_7 {padding: 50px 0 0;}
+
+}
+
+@media screen and (max-width:767px) {
+	header .container {max-width: 767px; flex-wrap: wrap; height: auto;}
+	.container {max-width: 540px; padding: 0;}
+	section .container {flex-flow: column;}
+
+	.logo {margin: 0 5%;}
+	.hamburger_button {display: block; margin: 10px 5%;}
+
+	nav {width: 100%; display: none;}
+	nav ul {flex-direction: column; background-color: #7d71d3;}
+
+	.button_img {display: flex; flex-wrap: wrap; margin-bottom: 50px;}
+	.google_play {margin-bottom: 10px;}
+	.apple_store {margin-bottom: 10px;}
+
+	.main_banner {padding: 200px 0 150px;}
+	.main_banner_info_top {text-align: left; width: 100%;}
+
+	.center3_box_wrap {width: 100%; flex-wrap: wrap;}
+	.center3_box {padding: 50px;}
+	.center3_box h3 {margin-top: 0;}
+
+
+	.center4_img img {position: relative; top: 0; left: 0;}
+	
+	.section5 {padding: 100px 0;}
+	.center5_box {box-sizing: inherit; margin: 10px 0;}
+	.employee {flex-wrap: wrap;}
+	.employee_info {width: 100%; padding: 30px 0px; margin: 30px 0;}
+
+	#slide {width: 100%; height: 359px; margin: 50px 0 50px;}
+	.icon_box {display: none;}
+
+}

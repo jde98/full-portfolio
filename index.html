@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
     <title>Document</title>
 </head>
 
@@ -25,14 +26,18 @@
             <label><i class="fa-solid fa-bars"></i><a class="font-Nanum">메뉴</a></label>
             <input type="checkbox" id="expand-menu" name="expand-menu">
             <ul class="header_nav">
-                <li><span><i class="fa-solid fa-house"></i></span><a href="#">Home</a></li>
-                <li><span><i class="fa-solid fa-paw"></i></span><a href="#" class="font-Nanum"> 올라펫샵</a></li>
-                <li><span><i class="fa-solid fa-mobile-button"></i></span><a href="#"> Lifetrakr</a></li>
-                <li><span><i class="fa-solid fa-utensils"></i></span><a href="#"> Blackhouse</a></li>
-                <li><span><i class="fa-solid fa-book"></i></span><a href="#"> Interpark</a></li>
+                <li id="home_button"><span><i class="fa-solid fa-house"></i></span><a href="#home">Home</a></li>
+                <li id="holapet_button"><span><i class="fa-solid fa-paw"></i></span><a href="#holapet"
+                        class="font-Nanum"> Holapet Shop</a></li>
+                <li id="lifetrakr_button"><span><i class="fa-solid fa-mobile-button"></i></span><a href="#lifetrakr">
+                        Lifetrakr</a></li>
+                <li id="black_house_button"><span><i class="fa-solid fa-utensils"></i></span><a href="#black_house">
+                        Black House</a></li>
+                <li id="interpark_button"><span><i class="fa-solid fa-book"></i></span><a href="#interpark">
+                        Interpark</a></li>
             </ul>
         </nav>
-        <header>
+        <header id="home">
 
             <div class="header_main_wrap">
                 <div class="header_main_back"></div>
@@ -41,46 +46,205 @@
                 </div>
             </div>
         </header>
-        <section style="background-color: #fef4db;">
-        <div class="container">
-            <div class="leftbox">
-                <h2>PROJECT 01</h2>
-                <h3>올라펫샵</h3>
-                <p class="fontstyle1">Open API, Responsive Website</p>
-                <p class="fontstyle2">point color</p>
-                <div class="colorbox">
-                    <div class="colorcircle"></div>
-                    <div class="colorcircle"></div>
-                    <div class="colorcircle"></div>
-                </div>
-                <div class="textbox">
-                    <p class="fontstyle3">
-                        펫 전문 용품 사이트 올라펫샵입니다.
+        <section id="holapet" class="section1" style="height: 937px;">
+            <div class="container">
+                <div class="introduce">
+                    <h1>PROJECT <em>01</em></h1>
+                    <h2 style="color: #ffd700;">HOLAPET SHOP</h2>
+                    <h4>Open API, Json</h4>
+                    <h5>POINT COLOR</h5>
+                    <ul class="color">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+
                     </p>
+                    <a href="" target="_blank" class="btn_main">MAIN PAGE</a>
+                    <a href="" target="_blank" class="btn_sub">SUB PAGE</a>
                 </div>
-                <div class="btnbox">
-                    <a href="올라펫/main.html"><div class="mainbtn">MAIN PAGE</div></a>
-                    <a href="올라펫/sub.html"><div class="subbtn">SUB PAGE</div></a>
+
+                <div class="webpage">
+                    <div class="bodyimg">
+                        <ul id="bandi">
+                            <li><img src="img/main.png" alt="web1"></li>
+                        </ul>
+                    </div>
+
+                    <div class="bhoverbox" id="bandibox" onclick="window.open('html_3/main.html')">
+                        <i class="fas fa-plus"></i>
+                    </div>
                 </div>
             </div>
-            <div class="rightbox">
-                <img src="img/main.png" alt="img">
-            </div>
+        </section>
+        <section id="lifetrakr" class="section2" style="height: 937px;">
+            <div class="container">
+                <div class="introduce">
+                    <h1>PROJECT <em>02</em></h1>
+                    <h2 style="color: #7d71d3;">LIFETRAKR</h2>
+                    <h4>Open API, Json</h4>
+                    <h5>POINT COLOR</h5>
+                    <ul class="color">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
 
-            <div class="phonbox">
-                <ul>
-                    <img src="img/sub.png" alt="img">
-                    <li></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
+                    </p>
+                    <a href="" target="_blank" class="btn_main">MAIN PAGE</a>
+                    <a href="" target="_blank" class="btn_sub">SUB PAGE</a>
+                </div>
 
-        </div>
-    </section>
+                <div class="mobile">
+                    <div class="mobile_box" onclick="window.open('html_3/main.html')">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="webpage">
+                    <div class="bodyimg">
+                        <ul id="bandi">
+                            <li><img src="img/lifetrakr-main.png" alt="web1"></li>
+                        </ul>
+                    </div>
+
+                    <div class="bhoverbox" id="bandibox" onclick="window.open('html_3/main.html')">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="black_house" class="section3" style="height: 937px;">
+            <div class="container">
+                <div class="introduce">
+                    <h1>PROJECT <em>03</em></h1>
+                    <h2 style="color:#191a1c;">BALCK HOUSE</h2>
+                    <h4>Open API, Json</h4>
+                    <h5>POINT COLOR</h5>
+                    <ul class="color">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+
+                    </p>
+                    <a href="" target="_blank" class="btn_main">MAIN PAGE</a>
+                    <a href="" target="_blank" class="btn_sub">SUB PAGE</a>
+                </div>
+
+                <div class="mobile">
+                    <div class="mobile_box" onclick="window.open('html_3/main.html')">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="webpage">
+                    <div class="bodyimg">
+                        <ul id="bandi">
+                            <li><img src="img/blackhouse-main.png" alt="web1"></li>
+                        </ul>
+                    </div>
+
+                    <div class="bhoverbox" id="bandibox" onclick="window.open('html_3/main.html')">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="interpark" class="section4" style="height: 937px;">
+            <div class="container">
+                <div class="introduce">
+                    <h1>PROJECT <em>04</em></h1>
+                    <h2 style="color:#191a1c;">INTERPARK</h2>
+                    <h4>Open API, Json</h4>
+                    <h5>POINT COLOR</h5>
+                    <ul class="color">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>
+
+                    </p>
+                    <a href="" target="_blank" class="btn_main">MAIN PAGE</a>
+                    <a href="" target="_blank" class="btn_sub">SUB PAGE</a>
+                </div>
+
+                <div class="webpage">
+                    <div class="bodyimg">
+                        <ul id="bandi">
+                            <li><img src="img/blackhouse-main.png" alt="web1"></li>
+                        </ul>
+                    </div>
+
+                    <div class="bhoverbox" id="bandibox" onclick="window.open('html_3/main.html')">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
+<script>
+    $(document).ready(function () {
+
+        $('#home_button').click(function () {
+
+            var offset = $('#home').offset(); //선택한 태그의 위치를 반환
+
+            //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+            $('html').animate({ scrollTop: offset.top }, 500);
+
+        });
+
+        $('#holapet_button').click(function () {
+
+            var offset = $('#holapet').offset(); //선택한 태그의 위치를 반환
+
+            //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+            $('html').animate({ scrollTop: offset.top }, 500);
+
+        });
+
+        $('#lifetrakr_button').click(function () {
+
+            var offset = $('#lifetrakr').offset(); //선택한 태그의 위치를 반환
+
+            //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+            $('html').animate({ scrollTop: offset.top }, 500);
+
+        });
+
+        $('#black_house_button').click(function () {
+
+            var offset = $('#black_house').offset(); //선택한 태그의 위치를 반환
+
+            //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+            $('html').animate({ scrollTop: offset.top }, 500);
+
+        });
+
+        $('#interpark_button').click(function () {
+
+            var offset = $('#interpark').offset(); //선택한 태그의 위치를 반환
+
+            //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+            $('html').animate({ scrollTop: offset.top }, 500);
+
+        });
+    });
+</script>
 
 </html>

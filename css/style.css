@@ -15,7 +15,7 @@ section {
 }
 .container {
     position: relative;
-    width: 1340px;
+    width: 1300px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -72,11 +72,11 @@ nav {
 
 .menu {
     position: fixed;
-    top: 35%;
+    top: 38%;
     left: 10px;
     display: block;
     overflow: hidden;
-    width: 60px;
+    width: 70px;
     background-color: #000;
     color: #fff;
     transition: all 0.5s ease;
@@ -86,12 +86,15 @@ nav {
     z-index: 3;
 }
 .menu:hover {
-    width: 200px;
+    width: 220px;
 }
 .menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.menu ul li {
+    border-radius: 10px;
 }
 .menu a, .menu > label {
     display: block;
@@ -122,6 +125,7 @@ nav {
 .header_nav li {
     cursor: pointer;
     transition: all 0.25s ease 0s;
+    padding: 5px;
 }
 .header_nav li span i {
     padding: 0 8px;
@@ -142,16 +146,6 @@ nav {
     font-size: 1.5em;
     float: left;
     clear: left;
-}
-@media screen and (max-width:1023px) {
-    .menu {
-        width: 60px;
-    }
-}
-@media screen and (max-width:560px) {
-    .menu #expand-menu:not(:checked) ~ ul {
-        display: none;
-    }
 }
 
 .section1 {
@@ -337,15 +331,22 @@ nav {
     overflow: hidden;
     cursor: pointer;
 }
-.container .mobile_box ul li {
+.section2 .mobile_box ul li {
     width: 225px;
-    height: 510px;
+    height: 6112px;
 }
 .section2 .mobile_box ul li {
-    background-image: url(../img/lifetrakr-app.png);
+    background: no-repeat url(../img/lifetrakr-app.png);
+    background-size: cover;
+}
+
+.section3 .mobile_box ul li {
+    width: 225px;
+    height: 5570px;
 }
 .section3 .mobile_box ul li {
-    background-image: url(../img/blackhouse-app.png);
+    background: no-repeat url(../img/blackhouse-app.png);
+    background-size: contain;
 }
 
 .webpage {

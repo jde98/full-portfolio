@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
     <title>Document</title>
@@ -22,6 +23,8 @@
 
 <body>
     <div class="wrap">
+
+        <!-- menu -->
         <nav class="menu">
             <input type="checkbox" id="expand-menu" name="expand-menu">
             <ul class="header_nav">
@@ -38,16 +41,22 @@
                         profile</a></li>
             </ul>
         </nav>
-        <header id="home" class="content">
 
-            <div class="header_main_wrap">
-                <div class="header_main_back"></div>
-                <div class="header_main_title">
-                    <h1>Portfolio</h1>
+        <!-- header -->
+        <header id="home" class="content">
+            <div class='box'>
+                <div class='wave_header -one'></div>
+                <div class='wave_header -two'></div>
+                <div class='wave_header -three'></div>
+                <div class='title'>Portfoilo</div>
+                <div class="text_box" >
+                    <span class="typing"></span><span class="blink">|</span>
                 </div>
             </div>
         </header>
-        <section id="holapet" class="section1 content" style="height: 969px;">
+
+        <!-- section1 -->
+        <section id="holapet" class="section1 content">
             <div class="container">
                 <div class="introduce">
                     <h1>PROJECT <em>01</em></h1>
@@ -79,7 +88,9 @@
                 </div>
             </div>
         </section>
-        <section id="lifetrakr" class="section2 content" style="height: 969px;">
+
+        <!-- section2 -->
+        <section id="lifetrakr" class="section2 content">
             <div class="container">
                 <div class="introduce">
                     <h1>PROJECT <em>02</em></h1>
@@ -118,7 +129,9 @@
                 </div>
             </div>
         </section>
-        <section id="black_house" class="section3 content" style="height: 969px;">
+
+        <!-- section3 -->
+        <section id="black_house" class="section3 content">
             <div class="container">
                 <div class="introduce">
                     <h1>PROJECT <em>03</em></h1>
@@ -158,7 +171,9 @@
                 </div>
             </div>
         </section>
-        <section id="interpark" class="section4 content" style="height: 969px;">
+
+        <!-- section4 -->
+        <section id="interpark" class="section4 content">
             <div class="container">
                 <div class="introduce">
                     <h1>PROJECT <em>04</em></h1>
@@ -191,8 +206,15 @@
                 </div>
             </div>
         </section>
-        <section id="profile" class="profile_section content" style="height: 969px;">
-            <div class="header_main_back"></div>
+
+        <!-- profile section -->
+        <section id="profile" class="profile_section content">
+
+            <div class="ocean">
+                <div class="wave_bottom"></div>
+                <div class="wave_bottom"></div>
+            </div>
+
             <div id="name">
                 <h2>정다은</h2>
                 <p>정다은</p>
@@ -246,16 +268,18 @@
                     </div>
                     <div>
                         <h4>Graphic Design</h4>
-                        <p>PHOTOSHOP / ILLUSTRATOR / CSS / UI&#8226;UX DESIGN</p>
+                        <p>PHOTOSHOP / CSS / UI&#8226;UX DESIGN</p>
                     </div>
                     <div>
                         <h4>Mobile Design</h4>
                         <p>HTML / CSS / JAVA SCRIPT / JQUERY / RESPONSIVE DESIGN</p>
                     </div>
                 </div>
+            </div>
         </section>
     </div>
 </body>
+
 <script>
     $(document).ready(function () {
 
@@ -319,52 +343,67 @@
 
         });
 
-        $(function () {
-            //HOLAPET SHOP
-            $("#holapetshop_box").mouseenter(function () {
-                $("#holapetshop_main > li").stop().animate({ marginTop: "-1962px" }, 3000)
-            }).mouseleave(function () {
-                $("#holapetshop_main > li").stop().animate({ marginTop: "0px" }, 1000)
-            })
+        //HOLAPET SHOP
+        $("#holapetshop_box").mouseenter(function () {
+            $("#holapetshop_main > li").stop().animate({ marginTop: "-1962px" }, 3000)
+        }).mouseleave(function () {
+            $("#holapetshop_main > li").stop().animate({ marginTop: "0px" }, 1000)
+        });
 
-            //LIFETRAKR
-            $("#lifetrakr_box").mouseenter(function () {
-                $("#lifetrakr_main > li").stop().animate({ marginTop: "-2760px" }, 5000)
-            }).mouseleave(function () {
-                $("#lifetrakr_main > li").stop().animate({ marginTop: "0px" }, 3000)
-            })
+        //LIFETRAKR
+        $("#lifetrakr_box").mouseenter(function () {
+            $("#lifetrakr_main > li").stop().animate({ marginTop: "-2760px" }, 5000)
+        }).mouseleave(function () {
+            $("#lifetrakr_main > li").stop().animate({ marginTop: "0px" }, 3000)
+        });
 
-            //BALCK HOUSE
-            $("#blackhouse_box").mouseenter(function () {
-                $("#blackhouse_main > li").stop().animate({ marginTop: "-2250px" }, 4000)
-            }).mouseleave(function () {
-                $("#blackhouse_main > li").stop().animate({ marginTop: "0px" }, 2000)
-            })
+        //BALCK HOUSE
+        $("#blackhouse_box").mouseenter(function () {
+            $("#blackhouse_main > li").stop().animate({ marginTop: "-2250px" }, 4000)
+        }).mouseleave(function () {
+            $("#blackhouse_main > li").stop().animate({ marginTop: "0px" }, 2000)
+        });
 
-            //INTERPARK
-            $("#interpark_main").mouseenter(function () {
-                $("#interpark_main_box > li").stop().animate({ marginTop: "-1105px" }, 3000)
-            }).mouseleave(function () {
-                $("#interpark_main_box > li").stop().animate({ marginTop: "0px" }, 1000)
-            })
+        //INTERPARK
+        $("#interpark_main").mouseenter(function () {
+            $("#interpark_main_box > li").stop().animate({ marginTop: "-1105px" }, 3000)
+        }).mouseleave(function () {
+            $("#interpark_main_box > li").stop().animate({ marginTop: "0px" }, 1000)
+        });
+
+        $(".lifetrakr_mobile").mouseenter(function () {
+            $(".lifetrakr_mobile_box > ul > li").stop().animate({ marginTop: "-5600px" }, 13000)
+        }).mouseleave(function () {
+            $(".lifetrakr_mobile_box > ul > li").stop().animate({ marginTop: "0px" }, 5000)
+        });
+
+        $(".blackhouse_mobile").mouseenter(function () {
+            $(".blackhouse_mobile_box > ul > li").stop().animate({ marginTop: "-5055px" }, 11000)
+        }).mouseleave(function () {
+            $(".blackhouse_mobile_box > ul > li").stop().animate({ marginTop: "0px" }, 5000)
+        });
+
+        var $html = $("html");
+        var page = 1;
+        var lastPage = $(".content").length;
+
+        $html.animate({ scrollTop: 0 }, 10);
+        $(window).on("wheel", function (e) {
+            if ($html.is(":animated")) return;
+            if (e.originalEvent.deltaY > 0) {
+                if (page == lastPage) return;
+                page++;
+            } else if (e.originalEvent.deltaY < 0) {
+                if (page == 1) return;
+                page--;
+            }
+            var posTop = (page - 1) * $(".content").height();
+
+            $html.animate({ scrollTop: posTop });
 
         });
 
-        $(function () {
-
-            $(".lifetrakr_mobile").mouseenter(function () {
-                $(".lifetrakr_mobile_box > ul > li").stop().animate({ marginTop: "-5600px" }, 13000)
-            }).mouseleave(function () {
-                $(".lifetrakr_mobile_box > ul > li").stop().animate({ marginTop: "0px" }, 5000)
-            })
-
-            $(".blackhouse_mobile").mouseenter(function () {
-                $(".blackhouse_mobile_box > ul > li").stop().animate({ marginTop: "-5055px" }, 11000)
-            }).mouseleave(function () {
-                $(".blackhouse_mobile_box > ul > li").stop().animate({ marginTop: "0px" }, 5000)
-            })
-
-        })
+        $('#home_button').click();
     });
 
     var docStyle = document.documentElement.style;
@@ -374,26 +413,33 @@
         e.preventDefault();
     }, { passive: false });
 
-    var $html = $("html");
-    var page = 1;
-    var lastPage = $(".content").length;
+   
+    const content = "HTML | CSS  \n JavaScript |  JQuery";
+    const text = document.querySelector(".typing");
+    let i = 0;
 
-    $html.animate({ scrollTop: 0 }, 10);
-    $(window).on("wheel", function (e) {
-        if ($html.is(":animated")) return;
-        if (e.originalEvent.deltaY > 0) {
-            if (page == lastPage) return;
-            page++;
-        } else if (e.originalEvent.deltaY < 0) {
-            if (page == 1) return;
-            page--;
+    var typingInterval = setInterval(typing, 200);
+    
+    setInterval(()=>{
+        if(i == 0){
+            typingInterval = setInterval(typing, 200);
         }
-        var posTop = (page - 1) * $(".content").height();
-
-        $html.animate({ scrollTop: posTop });
-
-    });
-
+    }, 4000);
+    
+    function typing() {
+        let txt = content[i++];
+        if(txt != null && txt != '' && txt != 'undefined'){
+            text.innerHTML += txt=== "\n" ? "<br/>": txt;
+        }
+        if (i > content.length) {
+            clearInterval(typingInterval);
+            
+            setTimeout(()=>{
+                text.textContent = "";
+                i = 0;
+            },5000);
+        }
+    }   
 </script>
 
 </html>

@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-html {
-    background: #eee;
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -258,13 +254,13 @@ nav {
 }
 
 .section1 .color li:first-of-type {
-    background-color: #faebc3;
-}
-.section1 .color li:nth-of-type(2) {
     background-color: #ffd700;
 }
+.section1 .color li:nth-of-type(2) {
+    background-color: #faebc3;
+}
 .section1 .color li:last-of-type {
-    background-color: #eeeeee;
+    background-color: #fff;
 }
 
 .section2 {
@@ -308,13 +304,13 @@ nav {
 }
 
 .section4 .color li:first-of-type {
-    background-color: #191a1c;
+    background-color: #c43730;
 }
 .section4 .color li:nth-of-type(2) {
-    background-color: #202224;
+    background-color: #ef544d;
 }
 .section4 .color li:last-of-type {
-    background-color: #9d8f8f;
+    background-color: #f7f7f7;
 }
 
 .introduce {

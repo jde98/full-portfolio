@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
     <title>Document</title>
@@ -49,7 +49,7 @@
                 <div class='wave_header -two'></div>
                 <div class='wave_header -three'></div>
                 <div class='title'>Portfoilo</div>
-                <div class="text_box" >
+                <div class="text_box">
                     <span class="typing"></span><span class="blink">|</span>
                 </div>
             </div>
@@ -77,9 +77,8 @@
 
                 <div class="webpage">
                     <div class="bodyimg">
-                        <ul id="holapetshop_main">
-                            <li><img src="img/main.png" alt="web1"></li>
-                        </ul>
+                        <a id="holapetshop_main" href="https://jde98.github.io/holapet/"><img src="img/main.png"
+                                alt="web1"></a>
                     </div>
 
                     <div class="bhoverbox" id="holapetshop_box" onclick="window.open('html_3/main.html')">
@@ -118,9 +117,8 @@
 
                 <div class="webpage">
                     <div class="bodyimg">
-                        <ul id="lifetrakr_main">
-                            <li><img src="img/lifetrakr-main.png" alt="web1"></li>
-                        </ul>
+                        <a id="lifetrakr_main" href="https://jde98.github.io/lifetrakr/"><img
+                                src="img/lifetrakr-main.png" alt="web1"></a>
                     </div>
 
                     <div class="bhoverbox" id="lifetrakr_box" onclick="window.open('html_3/main.html')">
@@ -153,16 +151,15 @@
                 <div class="blackhouse_mobile mobile">
                     <div class="blackhouse_mobile_box mobile_box" onclick="window.open('html_3/main.html')">
                         <ul>
-                            <li></li>
+                            <li><a href="https://jde98.github.io/blackhouse/"></a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="webpage">
                     <div class="bodyimg">
-                        <ul id="blackhouse_main">
-                            <li><img src="img/blackhouse-main.png" alt="web1"></li>
-                        </ul>
+                        <a id="blackhouse_main" href="https://jde98.github.io/blackhouse/"><img
+                                src="img/blackhouse-main.png" alt="web1"></a>
                     </div>
 
                     <div class="bhoverbox" id="blackhouse_box" onclick="window.open('html_3/main.html')">
@@ -195,9 +192,8 @@
 
                 <div class="webpage">
                     <div class="bodyimg">
-                        <ul id="interpark_main">
-                            <li><img src="img/interpark-main.png" alt="web1"></li>
-                        </ul>
+                        <a id="interpark_main" href="https://jde98.github.io/interpark-clone-coding/"><img
+                                src="img/interpark-main.png" alt="web1"></a>
                     </div>
 
                     <div class="bhoverbox" id="interpark_main_box" onclick="window.open('html_3/main.html')">
@@ -345,23 +341,23 @@
 
         //HOLAPET SHOP
         $("#holapetshop_box").mouseenter(function () {
-            $("#holapetshop_main > li").stop().animate({ marginTop: "-1962px" }, 3000)
+            $("#holapetshop_main > img").stop().animate({ marginTop: "-1962px" }, 3000)
         }).mouseleave(function () {
-            $("#holapetshop_main > li").stop().animate({ marginTop: "0px" }, 1000)
+            $("#holapetshop_main > img").stop().animate({ marginTop: "0px" }, 1000)
         });
 
         //LIFETRAKR
         $("#lifetrakr_box").mouseenter(function () {
-            $("#lifetrakr_main > li").stop().animate({ marginTop: "-2760px" }, 5000)
+            $("#lifetrakr_main > img").stop().animate({ marginTop: "-2760px" }, 5000)
         }).mouseleave(function () {
-            $("#lifetrakr_main > li").stop().animate({ marginTop: "0px" }, 3000)
+            $("#lifetrakr_main > img").stop().animate({ marginTop: "0px" }, 3000)
         });
 
         //BALCK HOUSE
         $("#blackhouse_box").mouseenter(function () {
-            $("#blackhouse_main > li").stop().animate({ marginTop: "-2250px" }, 4000)
+            $("#blackhouse_main > img").stop().animate({ marginTop: "-2250px" }, 4000)
         }).mouseleave(function () {
-            $("#blackhouse_main > li").stop().animate({ marginTop: "0px" }, 2000)
+            $("#blackhouse_main > img").stop().animate({ marginTop: "0px" }, 2000)
         });
 
         //INTERPARK
@@ -413,31 +409,31 @@
         e.preventDefault();
     }, { passive: false });
 
-   
+
     const content = "HTML | CSS  \n JavaScript |  JQuery";
     const text = document.querySelector(".typing");
     let i = 0;
 
     var typingInterval = setInterval(typing, 200);
-    
-    setInterval(()=>{
-        if(i == 0){
+
+    setInterval(() => {
+        if (i == 0) {
             typingInterval = setInterval(typing, 200);
         }
     }, 4000);
-    
+
     function typing() {
         let txt = content[i++];
-        if(txt != null && txt != '' && txt != 'undefined'){
-            text.innerHTML += txt=== "\n" ? "<br/>": txt;
+        if (txt != null && txt != '' && txt != 'undefined') {
+            text.innerHTML += txt === "\n" ? "<br/>" : txt;
         }
         if (i > content.length) {
             clearInterval(typingInterval);
-            
-            setTimeout(()=>{
+
+            setTimeout(() => {
                 text.textContent = "";
                 i = 0;
-            },5000);
+            }, 5000);
         }
     }   
 </script>

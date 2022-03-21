@@ -449,7 +449,7 @@ nav {
     overflow: hidden;
     position: relative;
 }
-.webpage img {
+.bodyimg a img {
     width: 100%;
     height: auto;
 }
@@ -478,8 +478,6 @@ nav {
 
 .profile_section {
     position: relative;
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
     background-color: #fff;
     overflow: hidden;

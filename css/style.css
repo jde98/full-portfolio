@@ -7,6 +7,7 @@ body {
 }
 
 .wrap {
+    overflow: hidden;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -321,7 +322,7 @@ nav {
     justify-content: flex-start;
     align-content: space-between;
 }
-.container h1 {
+.introduce h1 {
     width: 100%;
     font-size: 44px;
     font-weight: 400;
@@ -329,20 +330,20 @@ nav {
     color: #000;
     letter-spacing: -0.5px;
 }
-.container h2 {
+.introduce h2 {
     width: 100%;
     font-size: 26px;
     font-weight: 900;
     letter-spacing: 0.5px;
 }
-.container h4 {
+.introduce h4 {
     width: 100%;
     font-size: 18px;
     font-weight: 400;
     color: #000;
     margin-bottom: 50px;
 }
-.container h5 {
+.introduce h5 {
     width: 100%;
     font-size: 16px;
     font-weight: 700;
@@ -350,7 +351,7 @@ nav {
     letter-spacing: 0.5px;
     line-height: 10px;
 }
-.container .color {
+.introduce .color {
     width: 100%;
     height: 80px;
     display: flex;
@@ -359,14 +360,14 @@ nav {
     align-items: center;
     margin-bottom: 40px;
 }
-.container .color li {
+.introduce .color li {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
-.container p {
-    width: 100%;
+.introduce p {
+    width: 80%;
     height: 320px;
     font-size: 14px;
     font-weight: 300;
@@ -449,6 +450,11 @@ nav {
     overflow: hidden;
     position: relative;
 }
+.bodyimg a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 .bodyimg a img {
     width: 100%;
     height: auto;
@@ -482,14 +488,96 @@ nav {
     background-color: #fff;
     overflow: hidden;
 }
+.profile_wrap {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.profile_name {
+    display: flex;
+    justify-content: space-between;
+}
+.profile_name div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.profile {
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
 
-#who caption {
+.who {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    height: 100%;
+}
+.who table:first-of-type {
+    margin-bottom: 7px;
+}
+.who td {
+    font-size: 14px;
+    color: #333;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+.who table:first-of-type td {
+    height: 43px;
+}
+
+.who td:first-child {
+    width: 100px;
+    height: 43px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.who caption {
     text-align: left;
     font-size: 27px;
     margin-bottom: 3px;
     font-weight: bold;
-    font-family: "corbel";
     letter-spacing: 2px;
+}
+
+.service {
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.service h2 {
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+.service p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.history {
+    display: flex;
+    flex-direction: column;
+}
+.history tbody tr {
+    height: 43px;
 }
 
 .ocean { 

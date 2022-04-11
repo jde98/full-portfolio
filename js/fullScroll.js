@@ -2,21 +2,21 @@ $(document).ready(function () {
 
     //HOLAPET SHOP
     $("#holapetshop_box").mouseenter(function () {
-        $("#holapetshop_main > img").stop().animate({ marginTop: "-1962px" }, 3000)
+        $("#holapetshop_main > img").stop().animate({ marginTop: "-1962px" }, 13000)
     }).mouseleave(function () {
         $("#holapetshop_main > img").stop().animate({ marginTop: "0px" }, 1000)
     });
 
     //LIFETRAKR
     $("#lifetrakr_box").mouseenter(function () {
-        $("#lifetrakr_main > img").stop().animate({ marginTop: "-2760px" }, 5000)
+        $("#lifetrakr_main > img").stop().animate({ marginTop: "-2760px" }, 15000)
     }).mouseleave(function () {
         $("#lifetrakr_main > img").stop().animate({ marginTop: "0px" }, 3000)
     });
 
     //BALCK HOUSE
     $("#blackhouse_box").mouseenter(function () {
-        $("#blackhouse_main > img").stop().animate({ marginTop: "-2250px" }, 4000)
+        $("#blackhouse_main > img").stop().animate({ marginTop: "-2250px" }, 15000)
     }).mouseleave(function () {
         $("#blackhouse_main > img").stop().animate({ marginTop: "0px" }, 2000)
     });

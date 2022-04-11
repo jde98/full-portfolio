@@ -522,7 +522,7 @@ nav {
 }
 .profile_img_wrap {
     width: 20%;
-    height: 180px;
+    height: 220px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
